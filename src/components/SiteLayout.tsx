@@ -1,8 +1,16 @@
-import { Link, Outlet } from "@tanstack/react-router";
+import { Link, Outlet } from "react-router-dom";
 import { Phone, Bus } from "lucide-react";
 
 const PHONE = "+40784875133";
 const PHONE_DISPLAY = "+40 784 875 133";
+
+function NavItem({ to, children, end }: { to: string; children: React.ReactNode; end?: boolean }) {
+  return (
+    <Link to={to} className="text-foreground/80 hover:text-foreground" {...(end ? {} : {})}>
+      {children}
+    </Link>
+  );
+}
 
 function Header() {
   return (
@@ -15,10 +23,10 @@ function Header() {
           <span className="text-lg font-bold tracking-tight">MBB Speed</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-          <Link to="/" activeOptions={{ exact: true }} activeProps={{ className: "text-primary" }} className="text-foreground/80 hover:text-foreground">Acasă</Link>
-          <Link to="/servicii" activeProps={{ className: "text-primary" }} className="text-foreground/80 hover:text-foreground">Servicii</Link>
-          <Link to="/despre" activeProps={{ className: "text-primary" }} className="text-foreground/80 hover:text-foreground">Despre noi</Link>
-          <Link to="/contact" activeProps={{ className: "text-primary" }} className="text-foreground/80 hover:text-foreground">Contact</Link>
+          <NavItem to="/" end>Acasă</NavItem>
+          <NavItem to="/servicii">Servicii</NavItem>
+          <NavItem to="/despre">Despre noi</NavItem>
+          <NavItem to="/contact">Contact</NavItem>
         </nav>
         <a
           href={`tel:${PHONE}`}
