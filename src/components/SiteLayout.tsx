@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
-import { Phone, Bus } from "lucide-react";
+import { Phone } from "lucide-react";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import logo from "@/assets/logo-mbb-speed.png";
 
 const PHONE = "+40784875133";
 const PHONE_DISPLAY = "+40 784 875 133";
@@ -17,11 +18,8 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground">
-            <Bus className="h-5 w-5" />
-          </span>
-          <span className="text-lg font-bold tracking-tight">MBB Speed</span>
+        <Link to="/" className="flex h-full items-center gap-2" aria-label="MBB Speed — pagina principală">
+          <img src={logo} alt="MBB Speed logo" width={180} height={56} className="h-12 w-auto object-contain" />
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           <NavItem to="/" end>Acasă</NavItem>
@@ -48,12 +46,7 @@ function Footer() {
     <footer className="border-t border-border bg-secondary/40">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground">
-              <Bus className="h-5 w-5" />
-            </span>
-            <span className="text-lg font-bold">MBB Speed</span>
-          </div>
+          <img src={logo} alt="MBB Speed logo" width={160} height={50} loading="lazy" className="h-12 w-auto object-contain" />
           <p className="mt-3 text-sm text-muted-foreground">
             Transport persoane și colete, rapid, sigur și confortabil — la prețuri corecte.
           </p>
