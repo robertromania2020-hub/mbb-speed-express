@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { Phone } from "lucide-react";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import logo from "@/assets/logo-mbb-speed.png";
+import logo from "@/assets/logo-mbb-speed-horizontal.png";
 
 const PHONE = "+40784875133";
 const PHONE_DISPLAY = "+40 784 875 133";
@@ -18,8 +18,8 @@ function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
-        <Link to="/" className="flex h-full items-center gap-2" aria-label="MBB Speed — pagina principală">
-          <img src={logo} alt="MBB Speed logo" width={180} height={56} className="h-12 w-auto object-contain" />
+        <Link to="/" className="flex h-full items-center" aria-label="MBB Speed — pagina principală">
+          <img src={logo} alt="MBB Speed logo" width={240} height={80} className="h-9 w-auto object-contain sm:h-10" />
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           <NavItem to="/" end>Acasă</NavItem>
