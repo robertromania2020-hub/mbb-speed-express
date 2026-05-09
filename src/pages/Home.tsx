@@ -24,6 +24,11 @@ export default function Home() {
             <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
               MBB Speed — transport persoane și colete
             </h1>
+            <div className="mt-5 rounded-xl border-2 border-primary bg-primary/10 px-5 py-3 text-center">
+              <p className="text-base font-bold text-primary md:text-lg">
+                🚐 Plecări din România: MARȚI · JOI · SÂMBĂTĂ
+              </p>
+            </div>
             <p className="mt-4 text-lg text-muted-foreground">
               Curse săptămânale între România, Austria, Germania și Olanda. Microbuze moderne, șoferi atestați, livrări rapide.
             </p>
