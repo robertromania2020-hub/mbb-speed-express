@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { Phone, Bus } from "lucide-react";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const PHONE = "+40784875133";
 const PHONE_DISPLAY = "+40 784 875 133";
@@ -25,6 +26,7 @@ function Header() {
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           <NavItem to="/" end>Acasă</NavItem>
           <NavItem to="/servicii">Servicii</NavItem>
+          <NavItem to="/rute">Rute</NavItem>
           <NavItem to="/despre">Despre noi</NavItem>
           <NavItem to="/contact">Contact</NavItem>
         </nav>
@@ -61,6 +63,7 @@ function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li><Link to="/" className="hover:text-foreground">Acasă</Link></li>
             <li><Link to="/servicii" className="hover:text-foreground">Servicii</Link></li>
+            <li><Link to="/rute" className="hover:text-foreground">Rute</Link></li>
             <li><Link to="/despre" className="hover:text-foreground">Despre noi</Link></li>
             <li><Link to="/contact" className="hover:text-foreground">Contact</Link></li>
           </ul>
@@ -88,6 +91,7 @@ export function SiteLayout() {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

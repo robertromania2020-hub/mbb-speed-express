@@ -4,6 +4,7 @@ import Home from "@/pages/Home";
 import Servicii from "@/pages/Servicii";
 import Despre from "@/pages/Despre";
 import Contact from "@/pages/Contact";
+import Rute from "@/pages/Rute";
 import NotFound from "@/pages/NotFound";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <Route element={<SiteLayout />}>
         <Route index element={<Home />} />
         <Route path="servicii" element={<Servicii />} />
+        <Route path="rute" element={<Rute />} />
         <Route path="despre" element={<Despre />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
