@@ -77,10 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "MBB Speed: transport persoane și colete rapid, sigur și confortabil. Rezervări la +40 784 875 133." },
       { name: "author", content: "MBB Speed" },
       { property: "og:title", content: "MBB Speed — Transport persoane și colete" },
-      { property: "og:description", content: "Curse zilnice și transport colete. Rezervări 24/7 la +40 784 875 133." },
+      { property: "og:description", content: "MBB Speed: transport persoane și colete rapid, sigur și confortabil. Rezervări la +40 784 875 133." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "MBB Speed — Transport persoane și colete" },
+      { name: "twitter:description", content: "MBB Speed: transport persoane și colete rapid, sigur și confortabil. Rezervări la +40 784 875 133." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/e0bcdf33-a508-4140-8065-465c27b5900f" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/e0bcdf33-a508-4140-8065-465c27b5900f" },
     ],
     links: [
       {
