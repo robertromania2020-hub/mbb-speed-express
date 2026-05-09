@@ -17,9 +17,9 @@ function NavItem({ to, children, end }: { to: string; children: React.ReactNode;
 function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+      <div className="mx-auto flex h-24 max-w-6xl items-center justify-between px-4">
         <Link to="/" className="flex h-full items-center" aria-label="MBB Speed — pagina principală">
-          <img src={logo} alt="MBB Speed logo" width={240} height={80} className="h-9 w-auto object-contain sm:h-10" />
+          <img src={logo} alt="MBB Speed logo" width={360} height={120} className="h-20 w-auto object-contain sm:h-24" />
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           <NavItem to="/" end>Acasă</NavItem>
