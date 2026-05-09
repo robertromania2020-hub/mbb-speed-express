@@ -19,7 +19,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-2 md:py-20">
           <div className="flex flex-col justify-center">
             <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-secondary/60 px-3 py-1 text-xs font-medium text-muted-foreground">
-              <ShieldCheck className="h-3.5 w-3.5 text-primary" /> Transport autorizat internațional
+              <ShieldCheck className="h-3.5 w-3.5 text-primary" /> Plecări din România: Marți, Joi și Sâmbătă
             </span>
             <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
               MBB Speed — transport persoane și colete
