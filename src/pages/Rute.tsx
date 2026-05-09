@@ -3,9 +3,9 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ROUTES = [
-  { from: "România", to: "Germania", days: "Luni, Miercuri, Vineri", duration: "~22 ore" },
+  { from: "România", to: "Germania", days: "Marți, Joi, Sâmbătă", duration: "~22 ore" },
   { from: "România", to: "Austria", days: "Marți, Joi, Sâmbătă", duration: "~16 ore" },
-  { from: "România", to: "Olanda", days: "Luni, Joi", duration: "~26 ore" },
+  { from: "România", to: "Olanda", days: "Marți, Joi, Sâmbătă", duration: "~26 ore" },
   { from: "Germania", to: "România", days: "Marți, Joi, Duminică", duration: "~22 ore" },
   { from: "Austria", to: "România", days: "Miercuri, Vineri, Duminică", duration: "~16 ore" },
   { from: "Olanda", to: "România", days: "Marți, Vineri", duration: "~26 ore" },
