@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import { SiteLayout } from "@/components/SiteLayout";
 
 import appCss from "../styles.css?url";
 
@@ -72,11 +73,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "MBB Speed — Transport persoane și colete" },
+      { name: "description", content: "MBB Speed: transport persoane și colete rapid, sigur și confortabil. Rezervări la +40 784 875 133." },
+      { name: "author", content: "MBB Speed" },
+      { property: "og:title", content: "MBB Speed — Transport persoane și colete" },
+      { property: "og:description", content: "Curse zilnice și transport colete. Rezervări 24/7 la +40 784 875 133." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -113,7 +114,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <SiteLayout />
     </QueryClientProvider>
   );
 }
