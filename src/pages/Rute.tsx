@@ -22,6 +22,9 @@ export default function Rute() {
 
       <section className="mx-auto max-w-6xl px-4 py-16">
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl">Rutele noastre</h1>
+        <p className="mt-3 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
+          Plecări din România: Marți, Joi și Sâmbătă
+        </p>
         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
           Operăm rute regulate între România, Austria, Germania și Olanda. Transport persoane și colete cu plecări săptămânale.
         </p>
