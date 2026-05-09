@@ -12,7 +12,7 @@ export default function Servicii() {
 
       <section className="mx-auto max-w-6xl px-4 py-16">
         <h1 className="text-4xl font-bold tracking-tight md:text-5xl">Serviciile noastre</h1>
-        <p className="mt-4 max-w-2xl text-lg text-muted-foreground">Două servicii principale, ambele dedicate rapidității și siguranței tale.</p>
+        <p className="mt-4 max-w-2xl text-lg text-muted-foreground">Transport persoane și colete între România, Austria, Germania și Olanda — rapid, sigur, la prețuri corecte.</p>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           <div className="rounded-xl border border-border bg-card p-8">

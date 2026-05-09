@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mbb-speed-express.lovable.app/sitemap.xml
